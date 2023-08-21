@@ -2,15 +2,29 @@
 <html>
 
 <head>
-	<title>Test App</title>
+	<title>Alisson's Backend Webpage</title>
 	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
 	<link rel="shortcut icon" type="image/png" href="/static/png/favicon.png">
 </head>
 
 <body>
 
-	<h1>Test App</h1>
+	<h1>Alisson's Backend Webpage</h1>
 	<p>Hello world!</p>
+	<form action="/api/create-name" method="post">
+		<label>Enter Name</label><input type="text"/>
+		<input type="submit" name="create"></br>
+	</form>
+
+	<form action="/api/lookup-name" method="post">
+		<label>Lookup Name</label><input type="text"/>
+		<input type="submit" name="lookup"></br>
+	</form>
+	<form action="/api/delete-name" method="post">
+		<label>Delete Name</label><input type="text" />
+		<input type="submit" name="delete">
+	</form>
+	
 
 </body>
 
